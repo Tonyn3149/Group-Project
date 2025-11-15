@@ -1,10 +1,11 @@
 import { Stack } from "expo-router";
 import { StyleSheet } from "react-native";
 
-export default function RootLayout() {
+export default function _layout() {
   return <Stack />;
 }
 export const styles = StyleSheet.create({
+  // all page styles
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -18,6 +19,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: -40,
   },
+  // index styles
   bar: {
     width: '80%',
     height: 5,
@@ -36,5 +38,18 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 16,
+  },
+  // loging page styles
+  username: {
+    backgroundColor: "#e8e8e8",
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 20,
+  },
+  password: {
+    backgroundColor: "#e8e8e8",
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 30,
   }
 });
