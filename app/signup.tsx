@@ -1,5 +1,5 @@
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
-import { styles } from "./layout;
+import { styles } from "./layout";
 
 export default function Signup() {
     return (
