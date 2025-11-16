@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { styles } from "./layout";
 
@@ -18,7 +19,9 @@ export default function Signup() {
             style={styles.password}
             secureTextEntry={true}> 
         </TextInput>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity 
+            style={styles.button}
+            onPress={() => router.push("/")}>
         <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
     </View>
