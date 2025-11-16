@@ -1,7 +1,6 @@
 from typing import List, Optional
 from pydantic import BaseModel
 
-
 # ---------------------------------------------------------
 # USER MANUAL INPUT MODEL
 # ---------------------------------------------------------
@@ -16,7 +15,7 @@ class FantasyRequest(BaseModel):
 # ---------------------------------------------------------
 class PlayerAdvice(BaseModel):
     player: str                         # One player per advice entry
-    recommendation: str                 # "Start" or "Sit"
+    recommendation: str                 # "Start", "Sit", "Flex", etc.
     explanation: str                    # Short reasoning
     confidence: float                   # 0.0 to 1.0 confidence score
 
