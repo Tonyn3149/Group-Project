@@ -63,5 +63,14 @@ export const styles = StyleSheet.create({
     marginLeft: '41%',
     marginBottom: 5,
     padding: 20,
-  }
+  },
+  backButton: {
+    position: 'absolute',
+    top: 50,
+    left: 20,
+  },
+  backText: {
+    color: 'white',
+    fontSize: 16,
+  },
 });

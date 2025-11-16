@@ -27,6 +27,12 @@ export default function Signup() {
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity 
+        style={styles.backButton} 
+        onPress={() => router.back()}
+      >
+        <Text style={styles.backText}>Back</Text>
+      </TouchableOpacity>
       <Text style={styles.title}>Sign Up</Text>
 
       <TextInput

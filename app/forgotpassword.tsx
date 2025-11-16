@@ -21,6 +21,13 @@ export default function ForgotPassword() {
 
   return (
     <View style={styles.container}>
+
+      <TouchableOpacity 
+        style={styles.backButton} 
+        onPress={() => router.back()}
+      >
+        <Text style={styles.backText}>Back</Text>
+      </TouchableOpacity>
       <Text style={styles.title}>Password Reset</Text>
 
         <TextInput
